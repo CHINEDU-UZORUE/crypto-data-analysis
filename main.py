@@ -9,7 +9,7 @@ from typing import List, Dict, Optional
 import time
 import tweepy
 import streamlit as st
-import config
+#import config
 import os
 import base58
 import logging
@@ -56,9 +56,9 @@ COINGECKO_CACHE_EXPIRY = 24 * 60 * 60  # 24 hours in seconds
 API_SEMAPHORE = asyncio.Semaphore(5)
 
 # Validate and set API keys
-BIRDEYE_API_KEY = getattr(config, "BIRDEYE_API_KEY", os.getenv("BIRDEYE_API_KEY", ""))
-GROQ_API_KEY = getattr(config, "GROQ_API_KEY", os.getenv("GROQ_API_KEY", ""))
-BEARER_TOKEN = getattr(config, "BEARER_TOKEN", os.getenv("BEARER_TOKEN", ""))
+BIRDEYE_API_KEY = getattr(os.getenv("BIRDEYE_API_KEY", ""))
+GROQ_API_KEY = getattr(os.getenv("GROQ_API_KEY", ""))
+BEARER_TOKEN = getattr(os.getenv("BEARER_TOKEN", ""))
 
 def validate_api_keys():
     """Validate API keys and allow override of Twitter Bearer Token via Streamlit UI with blank input."""
