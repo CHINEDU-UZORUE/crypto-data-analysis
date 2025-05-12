@@ -712,7 +712,7 @@ async def process_tweets(tweets: List[Dict], influencer_handle: str) -> List[Dic
                     logging.info(f"Updated ticker for contract {contract} to ${ticker} in tweet by @{influencer_handle}")
                 else:
                     logging.warning(f"Invalid contract address {contract} in tweet by @{influencer_handle}")
-                    st.warning(f"Invalid contract address {contract} in tweet by @{influencer_handle}")
+                    #st.warning(f"Invalid contract address {contract} in tweet by @{influencer_handle}")
                     continue
 
             display_ticker = f"${ticker.upper()}" if ticker and ticker != "Unknown" else "Unknown"
