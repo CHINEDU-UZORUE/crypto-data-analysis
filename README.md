@@ -1,6 +1,6 @@
 # crypto-data-analysis
 
-This is a Streamlit-based web application that analyzes recent tweets from specified Twitter (X) users, extracts cryptocurrency token mentions (e.g., $SOL, $BONK), retrieves price data using the Birdeye API, and allows natural language querying of results via a chat interface powered by Groq's Llama3-70b-8192 model. The app focuses on tracking the impact of influencer tweets on Solana-based token prices.
+This is a Streamlit-based web application that analyzes recent tweets from specified Twitter (X) users, extracts cryptocurrency token mentions (e.g., $SOL, $BONK), retrieves price data using the Birdeye API, and allows natural language querying of results via a chat interface powered by Groq's Llama-3.1-8b-instant model. The app focuses on tracking the impact of influencer tweets on Solana-based token prices.
 
 ## Features
 
@@ -128,7 +128,7 @@ BEARER_TOKEN = "your_twitter_bearer_token"
 
 * **Twitter API Limits**: The free Twitter API limits tweet fetching to 100 tweets. Use the UI's "Override Twitter Bearer Token" feature to input a personal token if rate limits are hit (HTTP 429 errors).
 * **Birdeye API**: Ensure your API key has sufficient quota for price data requests.
-* **Groq API**: The app uses the Llama3-70b-8192 model. Monitor usage in the GroqCloud console to stay within free tier limits.
+* **Groq API**: The app uses the Llama-3.1-8b-instant model. Monitor usage in the GroqCloud console to stay within free tier limits.
 * **CoinGecko**: Uses free tier API; no key required unless upgrading to a paid plan.
 
 ## Author
