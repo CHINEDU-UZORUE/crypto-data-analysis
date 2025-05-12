@@ -85,7 +85,7 @@ BEARER_TOKEN=your_twitter_bearer_token
 Start the Streamlit app:
 
 ```bash
-streamlit run app.py
+streamlit run main.py
 ```
 
 ## Using the App
