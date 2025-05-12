@@ -122,6 +122,7 @@ BEARER_TOKEN = "your_twitter_bearer_token"
 * **main.py**: Main app code, containing the Streamlit UI and logic for tweet fetching, token analysis, price retrieval, and NLP querying.
 * **requirements.txt**: List of Python dependencies with versions.
 * **README.md**: This file, providing setup and usage instructions.
+* **config_template.py**: Template for API keys (rename to config.py and fill in your keys).
 
 ## Notes
 
