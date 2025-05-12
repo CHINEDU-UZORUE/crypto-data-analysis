@@ -27,7 +27,6 @@ Before running the app, ensure you have:
   * Sign up at [Birdeye](https://birdeye.so/) and get an API key from your dashboard.
 * **Groq API Key**:
   * Sign up at [Groq](https://console.groq.com/) and get an API key from your dashboard.
-* **CoinGecko API**: No key required (uses free tier).
 
 ## Setup Instructions
 
@@ -69,7 +68,7 @@ GROQ_API_KEY = "your_groq_api_key"
 BEARER_TOKEN = "your_twitter_bearer_token"
 ```
 
-**Option 2: Set Environment Variables** This is what I used
+**Option 2: Set Environment Variables**: This is the approach I used
 
 Set the keys as environment variables (e.g., in a .env file or shell):
 
