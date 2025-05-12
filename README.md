@@ -36,8 +36,8 @@ Before running the app, ensure you have:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/CHINEDU-UZORUE/Solana-Influencer-Analyzer.git
-cd Solana-Influencer-Analyzer
+git clone https://github.com/CHINEDU-UZORUE/crypto-data-analysis.git
+cd crypto-data-analysis
 ```
 
 ### 2. Install Dependencies
@@ -54,7 +54,7 @@ The app requires API keys for Twitter, Birdeye, and Groq, which should be added 
 
 **Option 1: Create config.py**
 
-Copy the template file to config.py:
+Copy the config_template.py file to config.py:
 
 ```bash
 cp config_template.py config.py
@@ -69,7 +69,7 @@ GROQ_API_KEY = "your_groq_api_key"
 BEARER_TOKEN = "your_twitter_bearer_token"
 ```
 
-**Option 2: Set Environment Variables**
+**Option 2: Set Environment Variables** This is what I used
 
 Set the keys as environment variables (e.g., in a .env file or shell):
 
